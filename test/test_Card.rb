@@ -1,7 +1,7 @@
 require 'minitest'
 require 'minitest/autorun'
 require 'minitest/pride'
-require '../lib/flash_cards.rb'
+require '../lib/Card.rb'
 
 class CardTest < Minitest::Test
   def test_card_has_question
