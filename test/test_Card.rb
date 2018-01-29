@@ -5,15 +5,15 @@ require '../lib/Card.rb'
 
 class CardTest < Minitest::Test
   def test_card_has_question
-    card = Card.new('This is a question?', 'This is an answer')
+    card = Card.new('What is the capital of Alaska?', 'Juneau')
     assert_instance_of Card, card
-    assert_equal 'This is a question?', card.question
+    assert_equal 'What is the capital of Alaska?', card.question
     puts 'It has a question, bruh.'
   end
 
   def test_card_has_answer
-    card = Card.new('This is a question?', 'This is an answer')
-    assert_equal 'This is an answer', card.answer
+    card = Card.new('What is the capital of Alaska?', 'Juneau')
+    assert_equal 'Juneau', card.answer
     puts 'It has an answer, braj.'
   end
 end
